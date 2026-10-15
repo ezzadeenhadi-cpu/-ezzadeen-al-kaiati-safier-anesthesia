@@ -1,0 +1,633 @@
+html name=index.html
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Ezzadeen Hadi • Hub — Banners & Links (EN / العربية)</title>
+
+<!-- Open Graph / Twitter Card -->
+<meta property="og:title" content="Ezzadeen Hadi — Al‑Humam & Al‑Qadhi / ANESTHESIAVERSE" />
+<meta property="og:description" content="Medical education & automotive DIY — notes, guides, and video content." />
+<meta property="og:image" content="https://s1fpf8dh9pr1-d.space-z.ai/og-card.png" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="@ezzadeenhadi" />
+<meta name="theme-color" content="#070b14" />
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Ezzadeen Hadi",
+  "url":"https://s1fpf8dh9pr1-d.space-z.ai",
+  "sameAs":[
+    "https://www.youtube.com/@%D8%A7%D9%84%D9%87%D9%8F%D9%85%D8%A7%D9%85_%D8%A7%D9%84%D9%82%D8%A7%D8%B6%D9%8A",
+    "https://www.facebook.com/education.gap.2025",
+    "https://www.linkedin.com/in/al-humam-al-qadhi-11422b40b"
+  ],
+  "jobTitle":"Content Creator, Educator, Engineer",
+  "description":"Medical education & automotive DIY projects — crafted step by step."
+}
+</script>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800;900&display=swap" rel="stylesheet" />
+
+<style>
+:root{
+  --bg:#070b14; --card-border:rgba(38,49,77,.9); --muted:#8fa2c2; --accent-g:#f2b13d; --accent-t:#2dd4bf; --text:#eef1f8;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:
+   radial-gradient(480px 340px at 85% -5%, rgba(242,177,61,.14), transparent 60%),
+   radial-gradient(480px 360px at 0% 105%, rgba(45,212,191,.10), transparent 60%),
+   var(--bg);
+  color:var(--text);
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  padding:34px 18px;
+}
+
+/* layout */
+.container{width:100%;max-width:1100px;display:grid;grid-template-columns:1fr 380px;gap:22px;align-items:start}
+.card{background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));border:1px solid var(--card-border);
+padding:22px;border-radius:12px}
+.header{display:flex;gap:14px;align-items:center}
+.av{width:80px;height:80px;border-radius:50%;border:3px solid rgba(242,177,61,.6);
+display:flex;align-items:center;justify-content:center;font-size:36px;background:radial-gradient(circle at 32% 25%,#1a2742,#0f1830);color:var(--accent-g);overflow:hidden}
+.title h1{font-size:20px;margin-bottom:6px;font-weight:800}
+.title .sub{font-size:11px;letter-spacing:1.5px;color:var(--muted);font-weight:700}
+.desc{font-size:13px;color:#cbdaf1;margin-top:12px;line-height:1.6}
+
+/* links */
+.grp{margin-top:16px}
+.grp b{display:block;font-size:11px;letter-spacing:2.2px;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.lk{display:flex;align-items:center;gap:12px;padding:10px 12px;margin-bottom:10px;border-radius:10px;text-decoration:none;color:var(--text);font-weight:700;font-size:14px;background:rgba(18,27,48,.92);border:1px solid #26314d}
+.lk svg{width:20px;height:20px;flex:0 0 20px;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none}
+.meta{display:block;font-size:11px;color:var(--muted);font-weight:600;margin-top:2px}
+
+/* preview column */
+.side{position:sticky;top:24px}
+.preview{background:linear-gradient(180deg, rgba(255,255,255,.015), transparent);border-radius:10px;padding:14px;border:1px solid var(--card-border)}
+.preview h3{font-weight:800;margin-bottom:10px}
+.preview .btn{display:inline-block;padding:10px 12px;border-radius:10px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.04);color:var(--text);text-decoration:none;font-weight:800;cursor:pointer}
+
+/* banners */
+.banner-frame{position:relative;overflow:hidden;border-radius:6px;background:#0b1220;color:var(--text);display:flex;align-items:center;justify-content:center}
+.yt-banner{width:2560px;height:1440px}
+.fb-banner{width:1640px;height:624px}
+
+/* gold/teal design (same patterns used earlier) */
+.gold{background:
+ radial-gradient(900px 620px at 12% 0%,rgba(242,177,61,.17),transparent 60%),
+ radial-gradient(900px 620px at 90% 100%,rgba(242,177,61,.11),transparent 60%),
+ repeating-linear-gradient(45deg,rgba(255,255,255,.012) 0 2px,transparent 2px 26px),
+ linear-gradient(150deg,#111c34,#0b1220)}
+.teal{background:
+ radial-gradient(900px 620px at 88% 0%,rgba(45,212,191,.16),transparent 60%),
+ radial-gradient(900px 620px at 8% 100%,rgba(45,212,191,.11),transparent 60%),
+ repeating-linear-gradient(45deg,rgba(255,255,255,.012) 0 2px,transparent 2px 26px),
+ linear-gradient(150deg,#0d1b26,#0a1218)}
+.frame{position:absolute;inset:36px;border:2px solid rgba(242,177,61,.30);border-radius:26px;pointer-events:none}
+.teal .frame{border-color:rgba(45,212,191,.30)}
+.guide{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+border:2px dashed rgba(255,90,90,.75);pointer-events:none;z-index:5}
+.guide.hide{display:none}
+.yt .guide{width:1546px;height:423px}
+.fb .guide{width:1100px;height:560px}
+.guide::after{content:'SAFE ZONE — منطقة الأمان';position:absolute;top:6px;left:10px;font-size:15px;color:rgba(255,90,90,.9);font-weight:800}
+.wm{position:absolute;opacity:.05;pointer-events:none;line-height:1}
+.inner{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;text-align:center;padding:40px}
+.logo{border-radius:36px;background:rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center}
+.inner h1{font-weight:900;line-height:1.25;margin-top:14px}
+.inner .en{font-weight:700;color:#8fa2c2;margin-top:6px;letter-spacing:6px}
+.inner p{color:#c3cfe4;margin-top:12px;line-height:1.7}
+.handles{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap;justify-content:center}
+.handles span{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:999px;font-weight:800;color:#dbe3f3;padding:8px 14px}
+.cta{margin-top:22px;border-radius:999px;font-weight:900;padding:10px 24px}
+
+/* scaled preview helpers */
+.scale-yt { transform-origin:top left; transform:scale(0.12); width: 2560px; height: 1440px; }
+.scale-fb { transform-origin:top left; transform:scale(0.22); width: 1640px; height: 624px; }
+
+/* language toggle */
+.lang-toggle{position:fixed;left:18px;top:18px;background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.06);
+padding:8px 12px;border-radius:999px;color:var(--text);font-weight:800;cursor:pointer;backdrop-filter:blur(6px)}
+.lang-toggle small{display:block;font-size:11px;color:var(--muted);font-weight:700}
+
+/* accessible focus outlines */
+.lk:focus, .preview .btn:focus, button:focus { outline:3px solid rgba(66,153,225,.25); outline-offset:3px; }
+
+/* responsive */
+@media (max-width:980px){
+  .container{grid-template-columns:1fr;max-width:720px}
+  .lang-toggle{left:50%;transform:translateX(-50%)}
+}
+</style>
+</head>
+<body>
+
+<button id="langBtn" class="lang-toggle" title="Toggle language (Alt+L)" aria-pressed="false" aria-controls="cardMain">
+  <span id="langLabel">العربية</span><small style="margin-left:6px">EN / AR</small>
+</button>
+
+<div class="container">
+
+  <!-- main card -->
+  <section class="card" id="cardMain" role="main" aria-labelledby="hubHeading">
+    <h2 id="hubHeading" style="position:absolute;left:-9999px">Ezzadeen Hadi Hub</h2>
+
+    <div class="header">
+      <div class="av" aria-hidden="true">
+        <img src="https://gravatar.com/avatar/ezzadeenhadi?s=512&d=identicon" alt="Ezzadeen Hadi avatar" style="width:100%;height:100%;object-fit:cover" onerror="this.style.display='none'">ع
+      </div>
+      <div class="title">
+        <h1 id="nameLine">Ezzadeen <i style="font-style:normal;color:var(--accent-g)">Hadi</i></h1>
+        <div class="sub" id="subLine">CONTENT CREATOR • EDUCATOR • ENGINEER</div>
+      </div>
+    </div>
+
+    <p class="desc" id="descLine">Medical education & automotive DIY projects — crafted step by step, built to be replicated.</p>
+
+    <!-- English content -->
+    <div class="content" data-lang="en" style="display:none">
+      <div class="grp g" aria-label="Al-Humam & Al-Qadhi links">
+        <b>🎬 Al-Humam & Al-Qadhi</b>
+        <a class="lk" href="https://www.youtube.com/@%D8%A7%D9%84%D9%87%D9%8F%D9%85%D8%A7%D9%85_%D8%A7%D9%84%D9%82%D8%A7%D8%B6%D9%8A" target="_blank" rel="noopener" aria-label="YouTube channel Al-Humam & Al-Qadhi">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.5 9.5l5 2.5-5 2.5z"/></svg>
+          <div><div>YouTube <span class="meta">@الهُمام_القاضي</span></div></div>
+        </a>
+        <a class="lk" href="https://www.facebook.com/education.gap.2025" target="_blank" rel="noopener" aria-label="Facebook page education.gap.2025">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 4.5h-2A3.5 3.5 0 0 0 10 8v3H7.5v3H10v6h3v-6h2.5l.5-3h-3V8.5a1 1 0 0 1 1-1h2z"/></svg>
+          <div><div>Facebook <span class="meta">education.gap.2025</span></div></div>
+        </a>
+        <a class="lk" href="https://www.instagram.com/alhumam2alqadhi_" target="_blank" rel="noopener" aria-label="Instagram alhumam2alqadhi">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          <div><div>Instagram <span class="meta">@alhumam2alqadhi_</span></div></div>
+        </a>
+        <a class="lk" href="https://www.linkedin.com/in/al-humam-al-qadhi-11422b40b" target="_blank" rel="noopener" aria-label="LinkedIn Al-Humam Al-Qadhi">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 9.5V18.5"/><circle cx="6.5" cy="6" r="1.2"/><path d="M11 18.5v-9"/><path d="M11 13.2c0-2 1.4-3.7 3.4-3.7 2.1 0 3.1 1.4 3.1 3.7v5.3"/></svg>
+          <div><div>LinkedIn <span class="meta">Al-Humam Al-Qadhi</span></div></div>
+        </a>
+      </div>
+
+      <div class="grp t" aria-label="ANESTHESIAVERSE links">
+        <b>🩺 ANESTHESIAVERSE</b>
+        <a class="lk" href="https://payhip.com/b/e0fPi" target="_blank" rel="noopener" aria-label="Payhip store">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8h13l-1 12h-11z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <div><div>Digital Store <span class="meta">payhip.com/b/e0fPi</span></div></div>
+        </a>
+        <a class="lk" href="https://anesthesiacontent.wordpress.com" target="_blank" rel="noopener" aria-label="Anesthesia blog">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.3 3.8 5.2 3.8 8.5s-1.3 6.2-3.8 8.5c-2.5-2.3-3.8-5.2-3.8-8.5S9.5 5.8 12 3.5z"/></svg>
+          <div><div>Blog <span class="meta">anesthesiacontent.wordpress.com</span></div></div>
+        </a>
+      </div>
+
+      <div class="grp g" aria-label="About & portfolio">
+        <b>📇 About</b>
+        <a class="lk" href="https://gravatar.com/ezzadeenhadi" target="_blank" rel="noopener" aria-label="Gravatar portfolio">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.5"/><path d="M5 20c.8-3.5 3.6-5.5 7-5.5s6.2 2 7 5.5"/></svg>
+          <div><div>Portfolio <span class="meta">gravatar.com/ezzadeenhadi</span></div></div>
+        </a>
+        <a class="lk" href="https://s1fpf8dh9pr1-d.space-z.ai" target="_blank" rel="noopener" aria-label="Personal website">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg>
+          <div><div>Website <span class="meta">s1fpf8dh9pr1-d.space-z.ai</span></div></div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Arabic content -->
+    <div class="content" data-lang="ar" style="display:none;direction:rtl;font-family:Cairo, Inter, sans-serif">
+      <div class="grp g" aria-label="روابط القناة">
+        <b>🎬 قناة الهُمام والقاضي</b>
+        <a class="lk" href="https://www.youtube.com/@%D8%A7%D9%84%D9%87%D9%8F%D9%85%D8%A7%D9%85_%D8%A7%D9%84%D9%82%D8%A7%D8%B6%D9%8A" target="_blank" rel="noopener" aria-label="قناة يوتيوب الهُمام والقاضي">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.5 9.5l5 2.5-5 2.5z"/></svg>
+          <div style="text-align:right"><div>YouTube <span class="meta">@الهُمام_القاضي</span></div></div>
+        </a>
+        <a class="lk" href="https://www.facebook.com/education.gap.2025" target="_blank" rel="noopener" aria-label="فيسبوك الهُمام والقاضي">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 4.5h-2A3.5 3.5 0 0 0 10 8v3H7.5v3H10v6h3v-6h2.5l.5-3h-3V8.5a1 1 0 0 1 1-1h2z"/></svg>
+          <div style="text-align:right"><div>فيسبوك <span class="meta">education.gap.2025</span></div></div>
+        </a>
+      </div>
+
+      <div class="grp t" aria-label="روابط ANESTHESIAVERSE">
+        <b>🩺 ANESTHESIAVERSE</b>
+        <a class="lk" href="https://payhip.com/b/e0fPi" target="_blank" aria-label="المتجر الرقمي">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8h13l-1 12h-11z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <div style="text-align:right"><div>المتجر الرقمي <span class="meta">payhip.com/b/e0fPi</span></div></div>
+        </a>
+        <a class="lk" href="https://anesthesiacontent.wordpress.com" target="_blank" aria-label="المدونة">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.3 3.8 5.2 3.8 8.5s-1.3 6.2-3.8 8.5c-2.5-2.3-3.8-5.2-3.8-8.5S9.5 5.8 12 3.5z"/></svg>
+          <div style="text-align:right"><div>المدوّنة <span class="meta">anesthesiacontent.wordpress.com</span></div></div>
+        </a>
+      </div>
+
+      <div class="grp g" aria-label="عن صاحب الصفحات">
+        <b>📇 عني</b>
+        <a class="lk" href="https://gravatar.com/ezzadeenhadi" target="_blank" rel="noopener" aria-label="عرض المشاريع">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.5"/><path d="M5 20c.8-3.5 3.6-5.5 7-5.5s6.2 2 7 5.5"/></svg>
+          <div style="text-align:right"><div>معرض المشاريع <span class="meta">gravatar.com/ezzadeenhadi</span></div></div>
+        </a>
+        <a class="lk" href="https://s1fpf8dh9pr1-d.space-z.ai" target="_blank" rel="noopener" aria-label="موقعي الشخصي">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg>
+          <div style="text-align:right"><div>موقعي <span class="meta">s1fpf8dh9pr1-d.space-z.ai</span></div></div>
+        </a>
+      </div>
+
+      <div class="foot" style="margin-top:14px;font-size:12px;color:#9fb6d7">© 2025 <b>قناة الهُمام والقاضي</b> — صُنعت بحب 🛠️ من إزّادين هادي</div>
+    </div>
+
+  </section>
+
+  <!-- right: previews and capture -->
+  <aside class="side" aria-label="Banners preview and download">
+    <div class="preview" role="region" aria-labelledby="bannersHeading">
+      <h3 id="bannersHeading">Banners — معاينات و تنزيل</h3>
+
+      <!-- YT Gold -->
+      <div style="margin-top:8px">
+        <div style="margin-bottom:8px;font-weight:800;color:var(--muted)">YouTube — Gold (2560×1440)</div>
+        <div class="banner-preview" aria-hidden="true">
+          <div id="ytGold" class="banner-frame yt gold" style="height:200px;display:flex;align-items:center;justify-content:center" role="img" aria-label="YouTube banner Al-Humam & Al-Qadhi">
+            <div class="yt-banner gold preview-mini scale-yt" aria-hidden="true">
+              <div class="frame"></div>
+              <div class="inner" role="presentation">
+                <div class="logo">🎬</div>
+                <h1>قناة الهُمام والقاضي</h1>
+                <div class="en">AL-HUMAM &amp; AL-QADHI</div>
+                <p>محتوى تعليمي ومعرفي — نُبسّط العلم ونُتقن الصنعة</p>
+                <div class="handles"><span>▶️ YouTube</span><span>📘 Facebook</span><span>📸 Instagram</span><span>💼 LinkedIn</span></div>
+                <div class="cta">🔔 اشترك في القناة</div>
+              </div>
+            </div>
+          </div>
+          <div style="display:flex;gap:8px;margin-top:8px">
+            <button class="preview-mini preview-btn" onclick="captureAndDownload('ytGold','yt_gold.png',2560,1440,'yt_gold')" aria-label="Download YT Gold PNG">Capture PNG</button>
+            <button class="preview-mini preview-btn" onclick="captureAndDownloadWebP('ytGold','yt_gold.webp',2560,1440,'yt_gold_webp')" aria-label="Download YT Gold WebP">Download WebP</button>
+            <button class="preview-mini preview-btn" onclick="captureAndDownloadPDF('ytGold','yt_gold.pdf',2560,1440,'yt_gold_pdf')" aria-label="Download YT Gold PDF">Download PDF</button>
+            <button class="preview-mini preview-btn" onclick="openFull('ytGold',2560,1440)" aria-label="Open full YT Gold">Open full</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- YT Teal -->
+      <div style="margin-top:12px">
+        <div style="margin-bottom:8px;font-weight:800;color:var(--muted)">YouTube — Teal (2560×1440)</div>
+        <div class="banner-preview" aria-hidden="true">
+          <div id="ytTeal" class="banner-frame yt teal" style="height:200px;display:flex;align-items:center;justify-content:center" role="img" aria-label="YouTube banner ANESTHESIAVERSE">
+            <div class="yt-banner teal preview-mini scale-yt" aria-hidden="true">
+              <div class="frame"></div>
+              <div class="inner" role="presentation">
+                <div class="logo">🩺</div>
+                <h1>ANESTHESIAVERSE</h1>
+                <div class="en">BY ANESTHESIA INSIGHT</div>
+                <p>Anesthesia education made clear — notes, guides &amp; digital resources</p>
+                <div class="handles"><span>🛒 Store</span><span>🌐 Blog</span><span>📘 Facebook</span><span>💼 LinkedIn</span></div>
+                <div class="cta">🛒 VISIT THE STORE</div>
+              </div>
+            </div>
+          </div>
+          <div style="display:flex;gap:8px;margin-top:8px">
+            <button class="preview-mini preview-btn" onclick="captureAndDownload('ytTeal','yt_teal.png',2560,1440,'yt_teal')">Capture PNG</button>
+            <button class="preview-mini preview-btn" onclick="captureAndDownloadWebP('ytTeal','yt_teal.webp',2560,1440,'yt_teal_webp')">Download WebP</button>
+            <button class="preview-mini preview-btn" onclick="captureAndDownloadPDF('ytTeal','yt_teal.pdf',2560,1440,'yt_teal_pdf')">Download PDF</button>
+            <button class="preview-mini preview-btn" onclick="openFull('ytTeal',2560,1440)">Open full</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FB Gold -->
+      <div style="margin-top:12px">
+        <div style="margin-bottom:8px;font-weight:800;color:var(--muted)">Facebook — Gold (1640×624)</div>
+        <div class="banner-preview" aria-hidden="true">
+          <div id="fbGold" class="banner-frame fb gold" style="height:120px;display:flex;align-items:center;justify-content:center" role="img" aria-label="Facebook banner Al-Humam & Al-Qadhi">
+            <div class="fb-banner gold preview-mini scale-fb" aria-hidden="true">
+              <div class="frame"></div>
+              <div class="inner" role="presentation">
+                <div class="logo">🎬</div>
+                <h1>قناة الهُمام والقاضي</h1>
+                <div class="en">AL-HUMAM &amp; AL-QADHI</div>
+                <p>محتوى تعليمي ومعرفي يُتقن ويلهِم</p>
+                <div class="handles"><span>▶️ YouTube</span><span>📸 Instagram</span><span>💼 LinkedIn</span></div>
+              </div>
+            </div>
+          </div>
+          <div style="display:flex;gap:8px;margin-top:8px">
+            <button class="preview-mini preview-btn" onclick="captureAndDownload('fbGold','fb_gold.png',1640,624,'fb_gold')">Capture PNG</button>
+            <button class="preview-mini preview-btn" onclick="captureAndDownloadWebP('fbGold','fb_gold.webp',1640,624,'fb_gold_webp')">Download WebP</button>
+            <button class="preview-mini preview-btn" onclick="captureAndDownloadPDF('fbGold','fb_gold.pdf',1640,624,'fb_gold_pdf')">Download PDF</button>
+            <button class="preview-mini preview-btn" onclick="openFull('fbGold',1640,624)">Open full</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FB Teal -->
+      <div style="margin-top:12px">
+        <div style="margin-bottom:8px;font-weight:800;color:var(--muted)">Facebook — Teal (1640×624)</div>
+        <div class="banner-preview" aria-hidden="true">
+          <div id="fbTeal" class="banner-frame fb teal" style="height:120px;display:flex;align-items:center;justify-content:center" role="img" aria-label="Facebook banner ANESTHESIAVERSE">
+            <div class="fb-banner teal preview-mini scale-fb" aria-hidden="true">
+              <div class="frame"></div>
+              <div class="inner" role="presentation">
+                <div class="logo">🩺</div>
+                <h1>ANESTHESIAVERSE</h1>
+                <div class="en">BY ANESTHESIA INSIGHT</div>
+                <p>Anesthesia education made clear</p>
+                <div class="handles"><span>🛒 Store</span><span>🌐 Blog</span><span>💼 LinkedIn</span></div>
+              </div>
+            </div>
+          </div>
+          <div style="display:flex;gap:8px;margin-top:8px">
+            <button class="preview-mini preview-btn" onclick="captureAndDownload('fbTeal','fb_teal.png',1640,624,'fb_teal')">Capture PNG</button>
+            <button class="preview-mini preview-btn" onclick="captureAndDownloadWebP('fbTeal','fb_teal.webp',1640,624,'fb_teal_webp')">Download WebP</button>
+            <button class="preview-mini preview-btn" onclick="captureAndDownloadPDF('fbTeal','fb_teal.pdf',1640,624,'fb_teal_pdf')">Download PDF</button>
+            <button class="preview-mini preview-btn" onclick="openFull('fbTeal',1640,624)">Open full</button>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:12px;display:flex;gap:8px">
+        <button class="preview-mini" id="downloadAll" aria-label="Download all banners as ZIP">Download all (ZIP)</button>
+        <button class="preview-mini" id="openAll" aria-label="Open all full-size">Open all full-size</button>
+      </div>
+
+      <div style="margin-top:10px;font-size:12px;color:var(--muted)">
+        Tips: Click "Open full" to view the full-size banner in a new tab. Use the PNG/WebP/PDF buttons or "Download all" to get optimized assets ready for upload.
+      </div>
+    </div>
+
+  </aside>
+</div>
+
+<!-- Hidden container for cloning full-size captures -->
+<div id="fullContainers" style="display:none" aria-hidden="true"></div>
+
+<!-- libraries -->
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script>
+/* Accessibility-friendly language switch + auto-detect */
+(function(){
+  const btn = document.getElementById('langBtn');
+  const label = document.getElementById('langLabel');
+  const sections = Array.from(document.querySelectorAll('.content'));
+  function setLang(lang){
+    document.documentElement.lang = lang;
+    document.documentElement.dir = (lang==='ar') ? 'rtl' : 'ltr';
+    sections.forEach(s=> s.style.display = (s.getAttribute('data-lang')===lang) ? 'block' : 'none' );
+    if(lang==='ar'){
+      document.getElementById('nameLine').textContent = 'إزّادين ';
+      document.getElementById('subLine').textContent = 'منشئ محتوى • مُعلم • مهندس';
+      document.getElementById('descLine').textContent = 'تعليم طبي ومشروعات صيانة سيارات — خطوة بخطوة، مبنية لتُعاد تجربتها.';
+      label.textContent = 'English';
+      btn.setAttribute('aria-pressed','true');
+    } else {
+      document.getElementById('nameLine').innerHTML = 'Ezzadeen <i style="font-style:normal;color:var(--accent-g)">Hadi</i>';
+      document.getElementById('subLine').textContent = 'CONTENT CREATOR • EDUCATOR • ENGINEER';
+      document.getElementById('descLine').textContent = 'Medical education & automotive DIY projects — crafted step by step, built to be replicated.';
+      label.textContent = 'العربية';
+      btn.setAttribute('aria-pressed','false');
+    }
+  }
+  const nav = navigator.language || 'en';
+  setLang(nav.startsWith('ar') ? 'ar' : 'en');
+  btn.addEventListener('click', ()=> setLang(document.documentElement.lang==='ar' ? 'en' : 'ar'));
+  window.addEventListener('keydown', (e)=>{ if(e.altKey && (e.key==='l' || e.key==='L')) btn.click(); });
+})();
+
+/* Capture helpers */
+async function cloneForCapture(sourceElem, widthPx, heightPx){
+  const clone = sourceElem.cloneNode(true);
+  clone.style.transform = 'none';
+  clone.style.width = widthPx + 'px';
+  clone.style.height = heightPx + 'px';
+  clone.style.position = 'absolute';
+  clone.style.left = '-99999px';
+  clone.style.top = '0';
+  clone.classList.remove('preview-mini','scale-yt','scale-fb');
+  clone.querySelectorAll('.preview-mini, .scale-yt, .scale-fb').forEach(n=>{ n.classList.remove('preview-mini','scale-yt','scale-fb'); n.style.transform='none'; n.style.width='100%'; n.style.height='100%'; });
+  document.getElementById('fullContainers').appendChild(clone);
+  await document.fonts.ready;
+  return clone;
+}
+
+async function captureCanvasFromElement(elem, width, height, format='png', quality=0.92){
+  const canvas = await html2canvas(elem, {
+    width: width,
+    height: height,
+    scale: 1,
+    useCORS: true,
+    backgroundColor: null,
+    allowTaint: true
+  });
+  if(format === 'webp'){
+    return canvas.toDataURL('image/webp', quality);
+  }
+  return canvas.toDataURL('image/png');
+}
+
+function downloadDataUrl(dataUrl, filename){
+  const a = document.createElement('a');
+  a.href = dataUrl;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+}
+
+/* Specific capture functions */
+async function captureAndDownload(previewId, filename, width, height, tag){
+  try{
+    const preview = document.getElementById(previewId);
+    const clone = await cloneForCapture(preview, width, height);
+    const banner = clone.querySelector('.yt-banner, .fb-banner') || clone;
+    const dataUrl = await captureCanvasFromElement(banner, width, height, 'png');
+    downloadDataUrl(dataUrl, filename);
+    clone.remove();
+  } catch(err){
+    alert('Capture failed: ' + err.message);
+    console.error(err);
+  }
+}
+
+async function captureAndDownloadWebP(previewId, filename, width, height, tag){
+  try{
+    const preview = document.getElementById(previewId);
+    const clone = await cloneForCapture(preview, width, height);
+    const banner = clone.querySelector('.yt-banner, .fb-banner') || clone;
+    const dataUrl = await captureCanvasFromElement(banner, width, height, 'webp', 0.92);
+    downloadDataUrl(dataUrl, filename);
+    clone.remove();
+  } catch(err){
+    alert('WebP capture failed: ' + err.message);
+    console.error(err);
+  }
+}
+
+async function captureAndDownloadPDF(previewId, filename, width, height, tag){
+  try{
+    const preview = document.getElementById(previewId);
+    const clone = await cloneForCapture(preview, width, height);
+    const banner = clone.querySelector('.yt-banner, .fb-banner') || clone;
+    // render PNG first
+    const dataUrl = await captureCanvasFromElement(banner, width, height, 'png');
+    // convert to PDF using jsPDF
+    const { jsPDF } = window.jspdf;
+    // set orientation based on width>height
+    const orientation = width > height ? 'landscape' : 'portrait';
+    const pdf = new jsPDF({ orientation: orientation, unit: 'px', format: [width, height] });
+    pdf.addImage(dataUrl, 'PNG', 0, 0, width, height);
+    const blob = pdf.output('blob');
+    saveAs(blob, filename);
+    clone.remove();
+  } catch(err){
+    alert('PDF generation failed: ' + err.message);
+    console.error(err);
+  }
+}
+
+/* open full-size view */
+async function openFull(previewId, width, height){
+  const preview = document.getElementById(previewId);
+  if(!preview){ alert('Preview not found'); return; }
+  const clone = await cloneForCapture(preview, width, height);
+  const banner = clone.querySelector('.yt-banner, .fb-banner') || clone;
+  const dataUrl = await captureCanvasFromElement(banner, width, height, 'png');
+  const win = window.open();
+  if(win){
+    win.document.write('<title>Banner preview</title><img src="'+dataUrl+'" alt="Banner preview" style="max-width:100%;height:auto;display:block;margin:0">');
+    win.document.close();
+  } else {
+    downloadDataUrl(dataUrl, 'banner.png');
+  }
+  clone.remove();
+}
+
+/* ZIP all banners (PNG + WebP + PDF + LICENSE.txt) */
+document.getElementById('downloadAll').addEventListener('click', async ()=>{
+  const tasks = [
+    {id:'ytGold', name:'yt_gold', w:2560, h:1440},
+    {id:'ytTeal', name:'yt_teal', w:2560, h:1440},
+    {id:'fbGold', name:'fb_gold', w:1640, h:624},
+    {id:'fbTeal', name:'fb_teal', w:1640, h:624},
+  ];
+  const zip = new JSZip();
+  try{
+    for(const t of tasks){
+      const preview = document.getElementById(t.id);
+      if(!preview) continue;
+      const clone = await cloneForCapture(preview, t.w, t.h);
+      const banner = clone.querySelector('.yt-banner, .fb-banner') || clone;
+      const png = await captureCanvasFromElement(banner, t.w, t.h, 'png');
+      const webp = await captureCanvasFromElement(banner, t.w, t.h, 'webp', 0.92);
+      // add PNG and WebP
+      zip.file(t.name + '.png', png.split(',')[1], {base64:true});
+      zip.file(t.name + '.webp', webp.split(',')[1], {base64:true});
+      // create PDF using jsPDF (small, using canvas blob)
+      // For simplicity, add PNG as PDF page (server-side conversion recommended for best results)
+      const pdfBlob = await (async ()=>{
+        const { jsPDF } = window.jspdf;
+        const pdf = new jsPDF({ orientation: t.w>t.h ? 'landscape' : 'portrait', unit: 'px', format: [t.w, t.h] });
+        pdf.addImage(png, 'PNG', 0, 0, t.w, t.h);
+        const blob = pdf.output('blob');
+        return blob;
+      })();
+      const arrayBuf = await pdfBlob.arrayBuffer();
+      zip.file(t.name + '.pdf', arrayBuf);
+      clone.remove();
+      await new Promise(r=>setTimeout(r, 300)); // small pause
+    }
+    // LICENSE + README inside ZIP
+    zip.file('LICENSE.txt', 'Copyright (c) 2025 Ezzadeen Hadi. Use assets with attribution or contact owner for commercial use.');
+    zip.file('README.txt', 'Contains banners in PNG, WebP and PDF. Use safe zone guides for mobile display.');
+    const content = await zip.generateAsync({type:'blob'});
+    saveAs(content, 'ezzadeenhadi_banners.zip');
+  } catch(err){
+    alert('Failed to create ZIP: ' + err.message);
+    console.error(err);
+  }
+});
+
+/* openAll: sequentially open each full-size (user gesture may be blocked in some browsers) */
+document.getElementById('openAll').addEventListener('click', ()=>{
+  const list = [
+    {id:'ytGold', w:2560, h:1440},
+    {id:'ytTeal', w:2560, h:1440},
+    {id:'fbGold', w:1640, h:624},
+    {id:'fbTeal', w:1640, h:624}
+  ];
+  (async ()=>{
+    for(const item of list){
+      await openFull(item.id, item.w, item.h);
+      await new Promise(r=>setTimeout(r, 600));
+    }
+  })();
+});
+</script>
+
+</body>
+</html>
+```
+
+2) README.md — تعليمات سريعة ونقاط مهمة (ضعه بجانب index.html)
+```markdown name=README.md
+# Ezzadeen Hadi — Link & Banners Hub
+
+What you have:
+- `index.html` — bilingual (English / Arabic) hub with links, banner previews and downloads.
+- Client-side export: PNG, WebP, PDF for each banner; download all as a ZIP including LICENSE and README.
+- SEO: Open Graph, Twitter Card and JSON-LD included.
+- Accessibility: ARIA attributes, keyboard shortcut (Alt+L) to toggle language.
+
+How to use:
+1. Save `index.html` and `README.md` in a GitHub repo or upload to your static host (Netlify / GitHub Pages / any static host).
+2. Open `index.html` in Chrome/Firefox. Use the buttons to capture banner PNG/WebP/PDF or download the ZIP.
+3. To change avatar: replace the Gravatar `img` src in `index.html` with your image URL (prefer 512×512).
+4. To customize text or links, edit the English/Arabic sections in the file.
+
+Optional deployment:
+- Use GitHub Pages or Netlify. (A sample GitHub Action `deploy.yml` is provided in `.github/workflows`.)
+
+Notes:
+- Client-side rendering uses `html2canvas`, `jszip` and `jspdf`. For production-ready prints or higher fidelity, consider server-side rendering or exporting from a graphics tool.
+- If you want me to push these files into a GitHub repo and enable GitHub Pages for you, give me repo owner/name and I’ll create the commit and workflow.
+```
+
+3) .github/workflows/deploy.yml — GitHub Actions (deploy to gh-pages)  
+```yaml name=.github/workflows/deploy.yml
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node (for any future build steps)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./   # publishes repository root (index.html)
+          publish_branch: gh-pages
+```
